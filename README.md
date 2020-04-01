@@ -2,4 +2,4 @@
 ## A better way to interact with Scratch
 https://micahlindley.com/sc4
 
-More information will be here soon!  Make sure to star this repository!
+This is the (work-in-progress) landing page for Scratch Client 4
