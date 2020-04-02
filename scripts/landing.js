@@ -18,3 +18,12 @@ function addFadeSlow() {
 }
 
 window.onscroll = addFadeSlow;
+
+/*
+var ua = detect.parse(navigator.userAgent);
+
+if (ua.browser.family == "Mobile Safari")
+{
+  var el = document.querySelector('link');
+}
+*/
