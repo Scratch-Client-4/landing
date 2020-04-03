@@ -85,7 +85,20 @@ h2 {
   animation-delay: 0s;
   color: white;
 }
-
+#downButtonThree {
+  opacity: 1;
+  position: absolute;
+  top: 190vh;
+  left: 50%;
+  animation-fill-mode: forwards;
+  transform: translateX(-50%);
+  color: black;
+  animation-name: float;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  color: white;
+}
 a > .material-icons-round {
   font-size: 2.5em !important;
 }
@@ -139,6 +152,12 @@ a > .material-icons-round {
   color: white;
   font-size: 2.5em;
 }
+
+.team-text h3 {
+  color: white;
+  font-size: 2.5em;
+}
+
 
 .open-text h3 {
   color: black;
