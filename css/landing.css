@@ -32,6 +32,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  text-align: center;
+}
+
+.header-container img {
+  max-width: 550px;
+  width: 67%;
+  height: auto;
 }
 
 @keyframes fadein {
@@ -64,26 +71,11 @@ h2 {
   left: 50%;
   animation-fill-mode: forwards;
   transform: translateX(-50%);
-  color: white;
+  color: #0D0D0D;
   animation-name: fadein, float;
   animation-duration: 1s, 3.5s;
   animation-iteration-count: 1, infinite;
   animation-delay: 1.75s, 2s;
-}
-
-#downButtonTwo {
-  opacity: 1;
-  position: absolute;
-  top: 190vh;
-  left: 50%;
-  animation-fill-mode: forwards;
-  transform: translateX(-50%);
-  color: white;
-  animation-name: float;
-  animation-duration: 3.5s;
-  animation-iteration-count: infinite;
-  animation-delay: 0s;
-  color: white;
 }
 
 a > .material-icons-round {
@@ -114,7 +106,6 @@ a > .material-icons-round {
   height: 100vh;
   width: 100vw;
   background-color: black;
-  opacity: 0;
   overflow: hidden;
 }
 
@@ -123,78 +114,11 @@ a > .material-icons-round {
   display: none;
 }
 
-.about-text {
-  width: 45vw;
+.about-container {
   position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   text-align: left;
-  padding: 20px;
-  color: white;
-  position: absolute;
-  top: 150%;
-  left: 10vw;
-  transform: translateY(-50%);
-}
-
-.about-text h3 {
-  color: white;
-  font-size: 2.5em;
-}
-
-.open-text h3 {
-  color: black;
-  font-size: 2.5em;
-}
-
-.about-text p {
-  font-size: 1.35em;
-  padding-right: 20px;
-}
-
-.screenshot-right {
-  box-shadow: rgba(225,225,225,0.3) 0 0 30px;
-  position: absolute;
-  height: 115vh;
-  width: auto;
-  top: 150%;
-  left: 70vw;
-  z-index: -1;
-  transform: translateY(-50%) rotateX(60deg) rotateZ(30deg);
-}
-
-.screenshot-left {
-  box-shadow: rgba(225,225,225,0.3) 0 0 30px;
-  position: absolute;
-  height: 115vh;
-  width: auto;
-  top: 250%;
-  right: 70vw;
-  z-index: -0.5;
-  transform: translateY(-50%) rotateX(60deg) rotateZ(-30deg);
-}
-
-.open-source {
-  height: 100vh;
-  width: 100vw;
-  background-color: white;
-  opacity: 1;
-  overflow: hidden;
-}
-
-.open-text {
-  width: 45vw;
-  position: absolute;
-  text-align: right;
-  padding: 20px;
-  color: white;
-  position: absolute;
-  top: 250%;
-  right: 10vw;
-  transform: translateY(-50%);
-  color: black;
-}
-
-.open-text p {
-  font-size: 1.35em;
-  padding-left: 20px;
-  color: black;
 }
