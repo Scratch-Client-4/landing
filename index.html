@@ -7,11 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.micahlindley.com/blurbs/reset.css">
   <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/navbar.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 
 <body id="body" onload="document.body.style.opacity='1'">
-  <div class="header">
+  <div id="navbar">
+    <nav>
+      <ul>
+        <li><a onclick="document.getElementById('header').scrollIntoView(true);">Home</a></li>
+        <li><a onclick="document.getElementById('about').scrollIntoView(true);">About</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header" id="header">
     <div class="header-container">
       <img src="assets/square.png" alt="Scratch Client 4">
     </div>
