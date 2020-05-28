@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+    padding:0;
+    margin:0 auto;
+}
+
 body {
   font-family: 'Alata', sans-serif;
   overflow-x: hidden;

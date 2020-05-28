@@ -1,3 +1,8 @@
+* {
+    padding:0;
+    margin:0 auto;
+}
+
 #navbar {
   width:100%;
   height:10vh;
@@ -15,13 +20,13 @@
 #navbar nav ul {
   display:flex;
   list-style:none;
-  padding-right:25%;
+  padding-right:60vw;
   text-transform:uppercase;
   letter-spacing:1px;
 
 }
 #navbar ul li {
-  padding-left:10vw;
+  padding-left:5vw;
   padding-top:3vh;
   color:#fff;
   font-size:1em;
