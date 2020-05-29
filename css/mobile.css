@@ -1,0 +1,29 @@
+* {
+    margin:0 auto;
+    padding:0;
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size:6vw;
+    }
+    h1 {
+        font-size:7vw;
+    }
+    .news-container p {
+        font-size:3vw;
+    }
+    .black-button {
+        font-size:5vw;
+        padding:2vh 2vw;
+        border: 0.5vw solid #000;
+    }
+    .black-button:hover {
+        font-size:5vw;
+        padding:2vh 2vw;
+        border: 0.5vw solid #000;
+    }
+    .about-container h1 {
+        padding-top:20vh;
+    }
+}
