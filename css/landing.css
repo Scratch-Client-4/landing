@@ -13,8 +13,8 @@ body {
   font-family: 'Alata', sans-serif;
   overflow-x: hidden;
   opacity: 0;
-  transition: opacity 2s;
-  -webkit-transition: opacity 2s; /* Safari */
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s; /* Safari */
 }
 
 .header {
@@ -156,7 +156,7 @@ a > .material-icons-round {
     padding-right:10vw;
 }
 
-hr {
+.news-container hr {
     width:50vw;
     margin-left:25vw;
     height:0.5vh;
@@ -204,4 +204,189 @@ h2 {
     color:#fff;
     border: 0.3vw solid #000;
     transition:all 0.3s ease-in-out;
+}
+
+.footer-container {
+    width:100vw;
+    height:50vh;
+    background-color:black;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+}
+
+.footer-container .table-container {
+    width:100%;
+    padding-top:5vh;
+}
+
+.footer-container #copyright {
+    padding-top:5vh;
+}
+
+.footer-container .table-container table {
+    width:100%;
+}
+
+.footer-container .table-container table tr {
+    width:100%;
+}
+
+.footer-container .table-container table tr td {
+    width:33%;
+}
+
+.footer-container .table-container table tr td .links {
+    list-style:none;
+    padding-top:3vh;
+    font-size:1.25vw;
+}
+
+.footer-container .table-container table tr td .news-footer {
+    width:60%;
+    margin-top:5vh;
+    border:0.3vw solid white;
+    padding:1vh 1vw;
+    border-radius: 1vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-container i, span {
+    font-size:3vw;
+    padding: 1vh 1vw;
+}
+
+.social-media {
+    display:flex;
+    list-style:none;
+    padding-top:5.5vh;
+}
+
+.social-media li {
+    border: 0.3vw solid #fff;
+    border-radius: 1vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media li:hover {
+    border: 0.3vw solid #fff;
+    background-color:#fff;
+    color:#000;
+    transition: all 0.3s ease-in-out;
+}
+
+.news-footer:hover {
+    background-color:#fff;
+    color:#000;
+    border: 3px solid #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-container p {
+    font-size: 1.25vw;
+}
+
+.footer-container h3 {
+    font-size:2vw;
+}
+
+.footer-container h4 {
+    font-size: 1.5vw;
+}
+
+.team {
+    background-color:#000;
+    width:100vw;
+    height:250vh;
+    color:#fff;
+    text-align:center;
+}
+
+.team-container {
+    width:100%;
+    height:100%;
+}
+
+.team-container hr {
+    background-color:#000;
+    color:#fff;
+    width:50vw;
+    margin-left:25vw;
+}
+
+.team-container h1 {
+    padding-top:20vh;
+}
+
+.team-container .team-table-container {
+    padding-top:10vh;
+    width:80vw;
+    margin-left:10vw;
+}
+
+.team-table-container table {
+    width:100%;
+}
+
+.team-table-container table tr {
+    width:100%;
+}
+
+.team-table-container table td {
+    width:25%;
+    text-align:center;
+    padding:7.5vh 0vw;
+    background-color:#000;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-table-container table td:hover {
+    background-color:#222;
+    transition:all 0.3s ease-in-out;
+}
+
+.team-table-container table td img {
+    width:10vw;
+}
+
+.team-table-container h3 {
+    font-size:2vw;
+}
+
+.team-table-container p {
+    font-size:1.5vw;
+}
+
+.team-table-container i, .team-table-container span {
+    font-size:2vw;
+    padding:0;
+    margin:0;
+}
+
+.team-table-container ul {
+    list-style:none;
+    display:flex;
+    padding-top:1vh;
+    padding-left:4vw;
+    padding-right:4vw;
+    justify-content:center;
+    align-items:center;
+}
+
+.join-today {
+    font-size:2.5vw;
+    padding: 1vh 1vw;
+    border: 0.3vw solid #fff;
+    border-radius: 1vw;
+    transition:all 0.3s ease-in-out;
+}
+
+.join-today:hover {
+    background-color:#fff;
+    color:#000;
+    transition:all 0.3s ease-in-out;
+}
+
+.join-today-container {
+    padding-top:7.5vh;
 }

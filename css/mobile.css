@@ -26,4 +26,68 @@
     .about-container h1 {
         padding-top:20vh;
     }
+
+    .footer-container .table-container table tr td .links {
+        font-size:2.5vw;
+        padding-top:1vh;
+    }
+
+    .footer-container .table-container table tr td .links li {
+        padding:0.3vh 0vw;
+    }
+
+    .footer-container p {
+        font-size:2.5vw;
+    }
+
+    .footer-container h3 {
+        font-size:3.5vw;
+    }
+
+    .footer-container i, span {
+    font-size:5vw;
+    padding: 1vh 1.5vw;
+    }
+
+    .social-media {
+        padding-top:1vh;
+    }
+
+    .footer-container .table-container table tr td .news-footer {
+        margin-top:1vh;
+        width:80%;
+    }
+
+    .footer-container h4 {
+    font-size: 3vw;
+    }
+
+    .team-table-container h3 {
+    font-size:3vw;
+    }
+
+    .team-table-container p {
+        font-size:2.5vw;
+    }
+
+    .team-table-container table td img {
+        width:15vw;
+    }
+
+    .team-table-container table td {
+        padding:6vh 0vw;
+        width:50%;
+    }
+
+    .team-container .team-table-container {
+        padding-top:10vh;
+    }
+
+    .join-today {
+        font-size:4vw;
+        padding: 2vh 3vw;
+        border: 0.5vw solid #fff;
+        transition:all 0.3s ease-in-out;
+    }
+
 }
