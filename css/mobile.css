@@ -76,7 +76,6 @@
 
     .team-table-container table td {
         padding:6vh 0vw;
-        width:50%;
     }
 
     .team-container .team-table-container {
@@ -89,5 +88,4 @@
         border: 0.5vw solid #fff;
         transition:all 0.3s ease-in-out;
     }
-
 }

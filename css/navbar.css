@@ -5,11 +5,11 @@
 
 #navbar {
   width:100%;
-  height:10vh;
+  height:4em;
   position:fixed;
   top:0;
   background:rgba(0,0,0,0.75);
-  z-index:2000;
+  z-index:5;
 }
 
 #navbar nav {
@@ -20,14 +20,14 @@
 #navbar nav ul {
   display:flex;
   list-style:none;
-  padding-right:50vw;
+  padding-right:60vw;
   text-transform:uppercase;
   letter-spacing:1px;
 
 }
 #navbar ul li {
-  padding-left:5vw;
-  padding-top:3vh;
+  padding-left:calc(5px + 3vw);
+  padding-top:1.2em;
   color:#fff;
   font-size:1em;
 }
