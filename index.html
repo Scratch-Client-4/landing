@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/landing.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/mobile.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
@@ -24,6 +26,14 @@
       </ul>
     </nav>
   </div>
+  <script>
+    $(window).scroll(function(){
+        var wScroll = $(window).scrollTop();
+        $('#header').css({'background-position': 'center ' + (wScroll*0.14) + 'vh'});
+        $('.header-container').css({'top': 50+(wScroll*0.14) + 'vh'});
+        $('.header-container').css({'top': 50+(wScroll*0.14) + 'vh'});
+    })
+</script>
   <div class="header" id="header">
     <div class="header-container">
       <img src="assets/square.png" alt="Scratch Client 4">
@@ -42,129 +52,286 @@
       <div class="team-table-container">
         <table>
           <tr>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
-              <p>Developer</p>
-              <ul>
+            <td onclick='showLinks("member1", "links1");'>
+              <div class="member-container">
+                <div id="member1" class="showMember">
+                <img src="assets/square.png">
+              <h3>Ethan</h3>
+              <p>Founder</p>
+              </div>
+              <div id="links1" class="hide">
+                <ul style="padding-top:20%;">
                 <li><a><span class="scratch">😸</span></a></li>
                 <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul style="padding-bottom:20%;">
                 <li><a><i class="fas fa-envelope"></i></a></li>
+                <li><a onclick='showMembers("member1", "links1");'><i class="fas fa-times"></i></a></li>
               </ul>
+              </div>
+              </div>
+
             </td>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
-              <p>Developer</p>
-              <ul>
+            <td onclick='showLinks("member2", "links2");'>
+              <div id="member2" class="showMember">
+                <img src="assets/square.png">
+              <h3>Micah</h3>
+              <p>Admin</p>
+              </div>
+              <div id="links2" class="hide">
+                <ul style="padding-top:20%">
                 <li><a><span class="scratch">😸</span></a></li>
                 <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul style="padding-bottom:20%;">
                 <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member2", "links2");'><i class="fas fa-times"></i></a></li>
               </ul>
+              </div>
             </td>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
-              <p>Developer</p>
-              <ul>
+                        <td onclick='showLinks("member3", "links3");'>
+              <div id="member3" class="showMember">
+                <img src="assets/square.png">
+              <h3>Rudra</h3>
+              <p>Frontend</p>
+              </div>
+              <div id="links3" class="hide">
+                <ul>
                 <li><a><span class="scratch">😸</span></a></li>
                 <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
                 <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member3", "links3");'><i class="fas fa-times"></i></a></li>
               </ul>
+              </div>
             </td>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
+                        <td onclick='showLinks("member4", "links4");'>
+              <div id="member4" class="showMember">
+                <img src="assets/square.png">
+              <h3>Josh</h3>
               <p>Developer</p>
-              <ul>
+              </div>
+              <div id="links4" class="hide">
+                <ul>
                 <li><a><span class="scratch">😸</span></a></li>
                 <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
                 <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member3", "links3");'><i class="fas fa-times"></i></a></li>
               </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
-              <p>Developer</p>
-              <ul>
-                <li><a><span class="scratch">😸</span></a></li>
-                <li><a><i class="fab fa-github"></i></a></li>
-                <li><a><i class="fas fa-envelope"></i></a></li>
-              </ul>
-            </td>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
-              <p>Developer</p>
-              <ul>
-                <li><a><span class="scratch">😸</span></a></li>
-                <li><a><i class="fab fa-github"></i></a></li>
-                <li><a><i class="fas fa-envelope"></i></a></li>
-              </ul>
-            </td>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
-              <p>Developer</p>
-              <ul>
-                <li><a><span class="scratch">😸</span></a></li>
-                <li><a><i class="fab fa-github"></i></a></li>
-                <li><a><i class="fas fa-envelope"></i></a></li>
-              </ul>
-            </td>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
-              <p>Developer</p>
-              <ul>
-                <li><a><span class="scratch">😸</span></a></li>
-                <li><a><i class="fab fa-github"></i></a></li>
-                <li><a><i class="fas fa-envelope"></i></a></li>
-              </ul>
+              </div>
             </td>
           </tr>
           <tr>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
+            <td onclick='showLinks("member5", "links5");'>
+              <div id="member5" class="showMember">
+                <img src="assets/square.png">
+              <h3>Hayden</h3>
               <p>Developer</p>
-              <ul>
+              </div>
+              <div id="links5" class="hide">
+                <ul>
                 <li><a><span class="scratch">😸</span></a></li>
                 <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
                 <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member5", "links5");'><i class="fas fa-times"></i></a></li>
               </ul>
+              </div>
             </td>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
-              <p>Developer</p>
-              <ul>
+            <td onclick='showLinks("member6", "links6");'>
+              <div id="member6" class="showMember">
+                <img src="assets/square.png">
+              <h3>Ethan</h3>
+              <p>Admin</p>
+              </div>
+              <div id="links6" class="hide">
+                <ul>
                 <li><a><span class="scratch">😸</span></a></li>
                 <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
                 <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member6", "links6");'><i class="fas fa-times"></i></a></li>
               </ul>
+              </div>
             </td>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
-              <p>Developer</p>
-              <ul>
+                        <td onclick='showLinks("member7", "links7");'>
+              <div id="member7" class="showMember">
+                <img src="assets/square.png">
+              <h3>Milo</h3>
+              <p>Frontend</p>
+              </div>
+              <div id="links7" class="hide">
+                <ul>
                 <li><a><span class="scratch">😸</span></a></li>
                 <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
                 <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member7", "links7");'><i class="fas fa-times"></i></a></li>
               </ul>
+              </div>
             </td>
-            <td>
-              <img src="assets/square.png">
-              <h3>John Doe</h3>
+                        <td onclick='showLinks("member8", "links8");'>
+              <div id="member8" class="showMember">
+                <img src="assets/square.png">
+              <h3>Jemunm</h3>
               <p>Developer</p>
-              <ul>
+              </div>
+              <div id="links8" class="hide">
+                <ul>
                 <li><a><span class="scratch">😸</span></a></li>
                 <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
                 <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member8", "links8");'><i class="fas fa-times"></i></a></li>
               </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td onclick='showLinks("member9", "links9");'>
+              <div id="member9" class="showMember">
+                <img src="assets/square.png">
+              <h3>KING</h3>
+              <p>Developer</p>
+              </div>
+              <div id="links9" class="hide">
+                <ul>
+                <li><a><span class="scratch">😸</span></a></li>
+                <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
+                <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member9", "links9");'><i class="fas fa-times"></i></a></li>
+              </ul>
+              </div>
+            </td>
+            <td onclick='showLinks("member10", "links10");'>
+              <div id="member10" class="showMember">
+                <img src="assets/square.png">
+              <h3>Locness</h3>
+              <p>Admin</p>
+              </div>
+              <div id="links10" class="hide">
+                <ul>
+                <li><a><span class="scratch">😸</span></a></li>
+                <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
+                <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member10", "links10");'><i class="fas fa-times"></i></a></li>
+              </ul>
+              </div>
+            </td>
+            <td onclick='showLinks("member11", "links11");'>
+              <div id="member11" class="showMember">
+                <img src="assets/square.png">
+              <h3>Maia</h3>
+              <p>Frontend</p>
+              </div>
+              <div id="links11" class="hide">
+                <ul>
+                <li><a><span class="scratch">😸</span></a></li>
+                <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
+                <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member11", "links11");'><i class="fas fa-times"></i></a></li>
+              </ul>
+              </div>
+            </td>
+            <td onclick='showLinks("member12", "links12");'>
+              <div id="member12" class="showMember">
+                <img src="assets/square.png">
+              <h3>MiniCoder</h3>
+              <p>Backend</p>
+              </div>
+              <div id="links12" class="hide">
+                <ul>
+                <li><a><span class="scratch">😸</span></a></li>
+                <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
+                <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member12", "links12");'><i class="fas fa-times"></i></a></li>
+              </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td onclick='showLinks("member13", "links13");'>
+              <div id="member13" class="showMember">
+                <img src="assets/square.png">
+              <h3>Neevcuber</h3>
+              <p>Frontend</p>
+              </div>
+              <div id="links13" class="hide">
+                <ul>
+                <li><a><span class="scratch">😸</span></a></li>
+                <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
+                <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member13", "links13");'><i class="fas fa-times"></i></a></li>
+              </ul>
+              </div>
+            </td>
+            <td onclick='showLinks("member14", "links14");'>
+              <div id="member14" class="showMember">
+                <img src="assets/square.png">
+              <h3>Smiley</h3>
+              <p>Backend</p>
+              </div>
+              <div id="links14" class="hide">
+                <ul>
+                <li><a><span class="scratch">😸</span></a></li>
+                <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
+                <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member14", "links14");'><i class="fas fa-times"></i></a></li>
+              </ul>
+              </div>
+            </td>
+            <td onclick='showLinks("member15", "links15");'>
+              <div id="member15" class="showMember">
+                <img src="assets/square.png">
+              <h3>Velocity</h3>
+              <p>Frontend</p>
+              </div>
+              <div id="links15" class="hide">
+                <ul>
+                <li><a><span class="scratch">😸</span></a></li>
+                <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
+                <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member15", "links15");'><i class="fas fa-times"></i></a></li>
+              </ul>
+              </div>
+            </td>
+            <td onclick='showLinks("member16", "links16");'>
+              <div id="member16" class="showMember">
+                <img src="assets/square.png">
+              <h3>YOYIT</h3>
+              <p>Frontend</p>
+              </div>
+              <div id="links16" class="hide">
+                <ul>
+                <li><a><span class="scratch">😸</span></a></li>
+                <li><a><i class="fab fa-github"></i></a></li>
+                </ul>
+                <ul>
+                <li><a><i class="fas fa-envelope"></i></a></li>
+                  <li><a onclick='showMembers("member16", "links16");'><i class="fas fa-times"></i></a></li>
+              </ul>
+              </div>
             </td>
           </tr>
         </table>
@@ -172,15 +339,14 @@
       <div class="join-today-container">
         <a class="join-today">Join Today</a>
       </div>
-
     </div>
     </div>
   <div class="news" id="news">
     <div class="news-container">
       <h1>See the latest news with our apps!</h1>
       <hr>
-      <h2>Lorem Ipsum Title</h2>
-      <p>Lorem Ipsum Description which contains a one-line summary of the news.</p>
+      <h2>v0.2.4 Released!</h2>
+      <p>View your projects with our new exquisite UI design!</p>
       <div class="button-container">
         <a class="black-button">Read More</a>
       </div>
@@ -215,9 +381,9 @@
             <td>
               <h3>Latest Updates</h3>
               <div class="news-footer" onclick="document.getElementById('news').scrollIntoView(true);">
-                <h4>Lorem Ipsum Title</h4>
-                <p>Lorem Ipsum description that briefly describes the update</p>
-                <h4>01/01/2020</h4>
+                <h4>v0.2.4 Released!</h4>
+                <p>View all your projects with our new exquisite UI design!</p>
+                <h4>13/04/2020</h4>
               </div>
             </td>
           </tr>
