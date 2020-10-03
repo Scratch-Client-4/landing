@@ -6,19 +6,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.micahlindley.com/blurbs/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/navbar.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 
 <body id="body" onload="document.body.style.opacity='1'">
-  <div class="options">
-    <a class="sc4" href="https://github.com/Scratch-Client-4/client" title="SC4 (Web Client)">
-      <img src="assets/square.png">
-    </a>
-    <a class="itchy" href="https://github.com/Scratch-Client-4/mobile" title="Itchy (Mobile App)">
-      <img src="assets/itchy.png">
-    </a>
+  <div id="navbar">
+    <nav>
+      <ul>
+        <li><a onclick="document.getElementById('header').scrollIntoView(true);">Home</a></li>
+        <li><a onclick="document.getElementById('about').scrollIntoView(true);">About</a></li>
+      </ul>
+    </nav>
   </div>
+  <div class="header" id="header">
+    <div class="header-container">
+      <img src="assets/square.png" alt="Scratch Client 4">
+    </div>
+    <a onclick="document.getElementById('about').scrollIntoView(true);" id="downButton"><span class="material-icons-round go-down">keyboard_arrow_down</span></a>
+  </div>
+  <div class="about" id="about">
+    <div class="about-container">
+      <h1>We build reliable, beautifully designed applications to access Scratch, completely open-source and maintained by the community.</h1>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>
 </body>
 
 </html>

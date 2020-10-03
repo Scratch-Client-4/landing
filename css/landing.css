@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    padding:0;
+    margin:0 auto;
+}
+
+body {
+  font-family: 'Alata', sans-serif;
+  overflow-x: hidden;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s; /* Safari */
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://images.unsplash.com/photo-1491904768633-2b7e3e7fede5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+.header-shade {
+  background-color: rgba(0,0,0,0.86);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.header-container img {
+  max-width: 550px;
+  width: 67%;
+  height: auto;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h1 {
+  opacity: 0;
+  font-size: 4vw;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s;
+}
+
+h2 {
+  opacity: 0;
+  font-size: 1.3em;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.25s;
+}
+
+#downButton {
+  opacity: 0;
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  animation-fill-mode: forwards;
+  transform: translateX(-50%);
+  color: #0D0D0D;
+  animation-name: fadein, float;
+  animation-duration: 1s, 3.5s;
+  animation-iteration-count: 1, infinite;
+  animation-delay: 1.75s, 2s;
+}
+
+a > .material-icons-round {
+  font-size: 2.5em !important;
+}
+
+@keyframes float {
+  0% { bottom: 10vh; }
+  50% { bottom: 13vh; }
+  100% { bottom: 10vh; }
+}
+
+.fading-slow {
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.fading {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.about {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.about-container {
+  position: relative;
+  width:100%;
+  color: white;
+  text-align: center;
+}
+
+.about-container h1 {
+    padding-top:30vh;
+    padding-bottom:30vh;
+    padding-left:15vw;
+    padding-right:15vw;
+}
