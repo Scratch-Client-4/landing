@@ -2,33 +2,42 @@
 <html lang="en" dir="ltr" id="html">
 
 <head>
-  <title>Scratch Client 4</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.micahlindley.com/blurbs/reset.css">
-  <link rel="stylesheet" href="css/landing.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+	<title>Scratch Client 4</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.micahlindley.com/blurbs/reset.css">
+	<link rel="stylesheet" href="css/landing.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 
 <body id="body" onload="document.body.style.opacity='1'">
-  <div id="navbar">
-    <nav>
-      <ul>
-        <li><a onclick="document.getElementById('header').scrollIntoView(true);">Home</a></li>
-        <li><a onclick="document.getElementById('about').scrollIntoView(true);">About</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="header" id="header">
-    <div class="header-container">
-      <img src="assets/square.png" alt="Scratch Client 4">
+	<div id="navbar">
+		<nav>
+			<a onclick="document.getElementById('header').scrollIntoView(true);">Home</a>
+			<a onclick="document.getElementById('about').scrollIntoView(true);">About</a>
+      <a href="https://github.com/Scratch-Client-4/itchy-ionic/releases" target="_blank" rel="nofollow">Releases</a>
+		</nav>
+	</div>
+	<div class="header" id="header">
+		<div class="header-container">
+      <div>
+        <img src="assets/itchy-mockup.png" alt="mockup" class="mockup">
+      </div>
+      <div>
+        <img src="assets/itchy-white-transparent.png" alt="Scratch Client 4" class="logo">
+        <div class="downloads">
+          <a href="#"><img src="assets/gplay.svg">Google Play</a>
+          <a href="https://github.com/Scratch-Client-4/itchy-ionic" target="_blank" rel="nofollow"><img src="assets/ghub.svg">Github</a>
+        </div>
+      </div>
     </div>
     <a onclick="document.getElementById('about').scrollIntoView(true);" id="downButton"><span class="material-icons-round go-down">keyboard_arrow_down</span></a>
   </div>
   <div class="about" id="about">
     <div class="about-container">
-      <h1>We build reliable, beautifully designed applications to access Scratch. Completely open-source and maintained by the community.</h1>
+      <h1>Itchy is a project of the Scratch Client 4 team.</h1>
+      <p>Scratch Client 4 is an effort to build modern, scalable third-party clients for the <a href="https://scratch.mit.edu/" target="_blank" rel="nofollow">Scratch</a> social coding platform.  All SC4 projects are open-source and community run from our public <a href="https://github.com/Scratch-Client-4/" target="_blank" rel="nofollow">GitHub organization</a>.</p>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>

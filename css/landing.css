@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -10,17 +10,18 @@ html {
 }
 
 body {
-  font-family: 'Alata', sans-serif;
+  font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   opacity: 0;
-  transition: opacity 2s;
-  -webkit-transition: opacity 2s; /* Safari */
+  transition: opacity 0.75s;
+  -webkit-transition: opacity 0.75s; /* Safari */
 }
 
 .header {
   height: 100vh;
   width: 100vw;
-  background-image: url('https://images.unsplash.com/photo-1491904768633-2b7e3e7fede5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+  background: rgb(23,49,89);
+  background: linear-gradient(146deg, rgba(23,49,89,1) 0%, rgb(1, 10, 24) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:fixed;
@@ -36,18 +37,79 @@ body {
 }
 
 .header-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 5vh 5vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 90vh;
   color: white;
   text-align: center;
+
 }
 
-.header-container img {
+.header-container div {
+  display: grid;
+  align-content: center;
+}
+
+.logo {
   max-width: 550px;
   width: 67%;
   height: auto;
+}
+
+.mockup {
+  max-height: 80vh;
+}
+
+.downloads {
+  padding-top: 1.6em;
+  width: 67%;
+  text-align: left;
+  display: inline !important;
+}
+
+.downloads a {
+  margin-right: 0.3em;
+  margin-left: 0;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 0.6em 1em;
+  text-transform: uppercase;
+  line-height: 3.75em;
+  transition: 0.2s;
+  position: relative;
+  white-space: nowrap;
+}
+
+.downloads a img {
+  height: 1em;
+  margin-right: 0.6em;
+  transform: translateY(0.1em);
+  transition: 0.2s;
+}
+
+.downloads a:hover {
+  background: white;
+  color: #3a3a3a;
+}
+
+.downloads a:hover img {
+  filter: brightness(0.2);
+}
+
+.downloads a:first-child::after {
+  content: 'coming soon';
+  color: rgba(255,255,255,0.4);
+  text-transform: none;
+  font-weight: normal;
+  position: absolute;
+  bottom: -3.3em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
 }
 
 @keyframes fadein {
@@ -80,7 +142,8 @@ h2 {
   left: 50%;
   animation-fill-mode: forwards;
   transform: translateX(-50%);
-  color: #0D0D0D;
+  color: #fff;
+  cursor: pointer;
   animation-name: fadein, float;
   animation-duration: 1s, 3.5s;
   animation-iteration-count: 1, infinite;
@@ -127,12 +190,69 @@ a > .material-icons-round {
   position: relative;
   width:100%;
   color: white;
-  text-align: center;
+  text-align: left;
+  display: grid;
+  align-content: center;
+  height: 100%;
 }
 
 .about-container h1 {
-    padding-top:30vh;
-    padding-bottom:30vh;
-    padding-left:15vw;
-    padding-right:15vw;
+  font-size: 2.2em;
+}
+
+.about-container h1, p {
+  min-width: 40%;
+  width: 70%;
+  max-width: 80%;
+  text-align: left;
+}
+
+.about-container p {
+  color: #999999;
+}
+
+.about-container p a {
+  color: white;
+}
+
+* {
+  padding:0;
+  margin:0 auto;
+}
+
+#navbar {
+  width:100%;
+  height: 35px;
+  position: fixed;
+  top: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+}
+
+#navbar nav {
+  width: 100%;
+  margin-top: 6px;
+  margin-left: 3vw;
+}
+
+#navbar a {
+  color: #fff;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 1.8em;
+  cursor: pointer;
+}
+
+#navbar nav ul li:hover {
+    opacity:0.75;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container div:first-child {
+    display: none;
+  }
+  .downloads {
+    text-align: center;
+  }
 }
