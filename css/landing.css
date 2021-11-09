@@ -55,10 +55,20 @@ body {
   max-width: 550px;
   width: 67%;
   height: auto;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.95s;
 }
 
 .mockup {
   max-height: 80vh;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s;
 }
 
 .downloads {
@@ -66,6 +76,11 @@ body {
   width: 67%;
   text-align: left;
   display: inline !important;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.05s;
 }
 
 .downloads a {
@@ -175,10 +190,12 @@ a > .material-icons-round {
 }
 
 .about {
-  height: 100vh;
+  padding-top: 3em;
+  min-height: calc(100vh - 3em);
   width: 100vw;
   background-color: black;
   overflow: hidden;
+  display: grid;
 }
 
 ::-webkit-scrollbar {
@@ -200,19 +217,36 @@ a > .material-icons-round {
   font-size: 2.2em;
 }
 
-.about-container h1, p {
+.about-container h1, p, article {
   min-width: 40%;
   width: 70%;
   max-width: 80%;
   text-align: left;
 }
 
-.about-container p {
+.about-container p, .about-container article {
   color: #999999;
 }
 
-.about-container p a {
+
+.about-container p a, .about-container article a {
   color: white;
+}
+
+article ul {
+  list-style-position: inside;
+}
+
+article {
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.inset {
+  margin-left: 20px;
 }
 
 * {
@@ -227,6 +261,7 @@ a > .material-icons-round {
   top: 0;
   background: rgba(0,0,0,0.55);
   z-index: 1;
+  backdrop-filter: blur(13px);
 }
 
 #navbar nav {
