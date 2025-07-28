@@ -1,46 +1,261 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" id="html">
+  <head>
+    <title>Itchy - Privacy Policy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.micahlindley.com/blurbs/reset.css"
+    />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<title>Itchy - Privacy Policy</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdn.micahlindley.com/blurbs/reset.css">
-	<link rel="stylesheet" href="css/landing.css">
-	<link rel="stylesheet" href="css/navbar.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-</head>
-
-<body id="body" onload="document.body.style.opacity='1'">
-	<div id="navbar">
-		<nav>
-			<a href="/">Home</a>
-			<a href="/#about">About</a>
-      <a href="https://github.com/Scratch-Client-4/itchy-ionic/releases" target="_blank" rel="nofollow">Releases</a>
-      <a href="#">Privacy</a>
-		</nav>
-	</div>
-  <div class="about" id="about">
-    <div class="about-container">
-      <h1>Privacy Policy</h1>
-      <article>Itchy (referred to here as "THE APP") collects very little identifiable information about its users.  It is important to note exactly what data we store:<br><br>
-      <ul>
-        <li>Your Scratch username</li>
-        <li>Your temporary auth token</li>
-        <li>Your app settings</li>
-      </ul>
-      <br>
-      <b>All of these are stored offline, on your phone.</b>  The app tries to make as many web requests as possible directly from your phone, but there are a few technical limitations in certain situations that force them to go through our servers, hosted by Vercel, including: <br><br>
-      <ul>
-        <li>Logging in</li>
-        <li>Following users</li>
-      </ul>
-      <br>
-      Performing these tasks involves sending your username and password or your auth token to our servers.  They are not saved or logged.  Usage data of the app is not collected in any way that is identifiable of a certain user or group.  Any data that is collected is completely generic and non-tracable. 
-      </article>
+  <body id="body" onload="document.body.style.opacity='1'">
+    <div id="navbar">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/#about">About</a>
+        <a
+          href="https://github.com/Scratch-Client-4/itchy-ionic/releases"
+          target="_blank"
+          rel="nofollow"
+          >Releases</a
+        >
+        <a href="#">Privacy</a>
+      </nav>
     </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>
-</body>
+    <div class="about" id="about">
+      <div class="privacy-container">
+        <h1>Privacy Policy</h1>
+        <article>
+          <p style="font-size: 0.8em; margin-top: 0.5rem">
+            <strong>Last updated:</strong> July 28, 2025
+          </p>
 
+          <p>
+            <em>
+              Itchy is a third-party mobile and web client for interacting with
+              Scratch projects via TurboWarp, with features like mobile-friendly
+              controls and MultiPlay (real-time collaboration). This Privacy
+              Policy explains how Itchy handles your data and protects your
+              privacy.
+            </em>
+          </p>
+
+          <h2>1. Account Information</h2>
+          <p>
+            Itchy does <strong>not</strong> allow users to create Scratch
+            accounts. All accounts must be created via
+            <a
+              href="https://scratch.mit.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+              >scratch.mit.edu</a
+            >. However, some Itchy features—like submitting mobile control
+            schemes or joining MultiPlay sessions—require login with a Scratch
+            account.
+          </p>
+          <ul>
+            <li>
+              Your Scratch username and password are stored
+              <strong>only in your device's encrypted local storage</strong>
+              .
+            </li>
+            <li>
+              You can sign out at any time, which removes this data from your
+              device.
+            </li>
+            <li>
+              <strong>Authentication and session tokens</strong> issued by
+              Scratch are stored <strong>on your device</strong> in cookies to
+              maintain login sessions. These tokens are never used for analytics
+              or tracking and expire according to Scratch’s own rules.
+            </li>
+          </ul>
+
+          <h2>2. ControlsDB</h2>
+          <p>
+            <a
+              href="https://itchy-controldb.vercel.app"
+              rel="noreferrer"
+              target="_blank"
+              >ControlsDB</a
+            >
+            is a community-powered database of user-submitted
+            <strong>mobile control schemes</strong> for Scratch games. This
+            allows players to interact with keyboard-based projects on
+            touchscreen devices.
+          </p>
+          <p>When submitting a new control mapping to ControlsDB:</p>
+          <ul>
+            <li>
+              The app verifies that you are logged in to your Scratch account
+              using your <strong>Scratch session token</strong>.
+            </li>
+            <li>
+              <strong
+                >No username, password, or personally identifying information is
+                sent to or stored by ControlsDB.</strong
+              >
+            </li>
+            <li>
+              ControlsDB is operated by <strong>Micah Lindley</strong>, the lead
+              developer of Itchy.
+            </li>
+          </ul>
+
+          <h2>3. TurboWarp Integration</h2>
+          <p>
+            Itchy embeds
+            <a
+              href="https://turbowarp.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              >TurboWarp</a
+            >
+            inside a WebView to play Scratch projects. Additional JavaScript is
+            injected to:
+          </p>
+          <ul>
+            <li>Provide touchscreen keyboard controls.</li>
+            <li>Enable MultiPlay peer-to-peer collaboration.</li>
+          </ul>
+          <p>
+            Any projects loaded or data sent through TurboWarp servers are
+            governed by
+            <strong
+              ><a
+                href="https://turbowarp.org/privacy.html"
+                target="_blank"
+                rel="noreferrer"
+                >TurboWarp’s own privacy policy</a
+              ></strong
+            >. Itchy does not modify TurboWarp’s storage or networking beyond UI
+            integration and input simulation.
+          </p>
+
+          <h2>4. MultiPlay (WebRTC Communication)</h2>
+          <p>
+            <strong>MultiPlay</strong> allows users to collaborate in real-time
+            by:
+          </p>
+          <ul>
+            <li>
+              Streaming the Scratch project canvas (via
+              <code>canvas.captureStream</code>) from the host device—<strong
+                >no camera or microphone access is used</strong
+              >.
+            </li>
+            <li>
+              Receiving control input (e.g., key presses) from remote clients
+              via
+              <strong>WebRTC</strong>.
+            </li>
+          </ul>
+          <p>All MultiPlay communication is:</p>
+          <ul>
+            <li><strong>Peer-to-peer and encrypted</strong>.</li>
+            <li>
+              Facilitated through a <strong>signaling server</strong> (run by
+              Micah Lindley) that connects devices but does
+              <strong>not store or log any communication</strong>.
+            </li>
+          </ul>
+          <p>
+            MultiPlay is
+            <strong>restricted to users aged 13 and older</strong> in compliance
+            with child privacy guidelines.
+          </p>
+
+          <h2>5. Cookies and Local Storage</h2>
+          <p>Itchy uses on-device storage and cookies to store:</p>
+          <ul>
+            <li>
+              Your <strong>Scratch authentication token</strong> for session
+              management.
+            </li>
+            <li>
+              Your <strong>Scratch credentials</strong> (encrypted) for
+              persistent login.
+            </li>
+          </ul>
+          <p>
+            This data is <strong>not shared</strong>,
+            <strong>not used for tracking</strong>, and is deleted upon logout
+            or app uninstallation.
+          </p>
+
+          <h2>6. Comment Moderation and Community Interaction</h2>
+          <p>
+            Itchy does
+            <strong
+              >not host or moderate user comments or community content</strong
+            >. All comment functionality is part of the official Scratch
+            platform and is
+            <strong>moderated solely by the Scratch Team</strong>. If you
+            encounter inappropriate content or behavior in comments, please
+            report it through
+            <a
+              href="https://scratch.mit.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+              >scratch.mit.edu</a
+            >.
+          </p>
+
+          <h2>7. Data Sharing and Retention</h2>
+          <ul>
+            <li>
+              No WebRTC communication or authentication data is stored or shared
+              externally.
+            </li>
+            <li>
+              ControlDB submissions use only the Scratch session token at the
+              time of submission.
+            </li>
+            <li>
+              All local data (credentials, tokens) is stored only on your device
+              and not synced to any cloud services.
+            </li>
+            <li>Tokens expire according to Scratch’s session policies.</li>
+          </ul>
+
+          <h2>8. Children’s Privacy</h2>
+          <p>
+            Itchy is accessible to users under 13. However, to protect younger
+            users:
+          </p>
+          <ul>
+            <li>
+              <strong
+                >MultiPlay is available only to users aged 13 and older</strong
+              >.
+            </li>
+            <li>
+              Itchy does not collect or transmit personal information from any
+              user.
+            </li>
+            <li>
+              Parental guidance is encouraged when children use interactive
+              features.
+            </li>
+          </ul>
+
+          <h2>9. Contact</h2>
+          <p>For questions or concerns about privacy, contact:</p>
+          <p>
+            <strong>Micah Lindley</strong><br />
+            <a href="mailto:hi@micahlindley.com">itchy@micahlindley.com</a>
+          </p>
+        </article>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>
+  </body>
 </html>

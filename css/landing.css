@@ -229,8 +229,8 @@ a > .material-icons-round {
 }
 
 .about-container h1,
-p,
-article {
+.about-container p,
+.about-container article {
   min-width: 40%;
   width: 70%;
   max-width: 80%;
@@ -261,6 +261,53 @@ article {
 
 .inset {
   margin-left: 20px;
+}
+
+/** PRIVACY PAGE */
+.privacy-container {
+  position: relative;
+  width: 100%;
+  color: white;
+  text-align: left;
+  display: grid;
+  align-content: center;
+  height: 100%;
+  width: 90vw;
+  max-width: 600px;
+}
+
+.privacy-container h1 {
+  font-size: 2.2em;
+  margin-top: 1rem;
+}
+
+.privacy-container h2 {
+  color: white;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.privacy-container h1,
+.privacy-container p,
+.privacy-container article {
+  text-align: left;
+  width: 100%;
+}
+
+.privacy-container a {
+  color: #999999;
+}
+
+.privacy-container li {
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.privacy-container p,
+.privacy-container article,
+.privacy-container ul {
+  color: #999999;
+  margin-bottom: 0.8rem;
 }
 
 * {
