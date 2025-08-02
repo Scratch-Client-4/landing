@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html">
+  <head>
+    <title>Itchy - MultiPlay FAQ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.micahlindley.com/blurbs/reset.css"
+    />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="body" onload="document.body.style.opacity='1'">
+    <div id="navbar">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/#about">About</a>
+        <a
+          href="https://github.com/micahlt/itchy-native/releases"
+          target="_blank"
+          rel="nofollow"
+          >Releases</a
+        >
+        <a href="#">MultiPlay</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+    </div>
+    <div class="about" id="about">
+      <div class="privacy-container">
+        <h1>MultiPlay FAQ</h1>
+        <article>
+          <h2 style="margin-top: 1rem">What is MultiPlay?</h2>
+          <p>
+            MultiPlay is a feature of the Itchy app that allows users to play
+            local-multiplayer style Scratch games with friends in real-time. It
+            uses WebRTC to connect devices over a peer-to-peer connection and
+            stream the Scratch project from one device while sending control
+            inputs from other devices.
+          </p>
+
+          <h2>Is MultiPlay secure?</h2>
+          <p>
+            Yes, MultiPlay uses the WebRTC technology for peer-to-peer
+            connections, which are encrypted by default. Additionally, the
+            signaling server used to establish connections does not store or log
+            any communication between devices.
+          </p>
+          <p>
+            Sending control inputs does not actually emulate real keypress or
+            mouse events on the host device, but instead injects inputs directly
+            into the TurboWarp virtual machine running inside Itchy. This means
+            that MultiPlay does not have access to your device or your personal
+            data.
+          </p>
+
+          <h2>Can anyone use MultiPlay?</h2>
+          <p>
+            To comply with child privacy laws, MultiPlay is restricted to users
+            aged 13 and older. This is to ensure that all participants can
+            understand and consent to the real-time connection features.
+          </p>
+
+          <h2>I don't see the MultiPlay feature in my app</h2>
+          <p>
+            At present, MultiPlay is only available in the beta version of the
+            Itchy app, which you can join at
+            <a
+              href="https://play.google.com/apps/testing/org.scratchclient4.itchy"
+              target="_blank"
+              >this link</a
+            >. You also may not see the MultiPlay feature if you are under 13
+            years old, as MultiPlay is restricted to users aged 13 and older.
+          </p>
+
+          <h2>Does MultiPlay comply with the Scratch community guidelines?</h2>
+          <p>
+            Yes, MultiPlay is designed to comply with Scratch's community
+            guidelines. It does not allow sharing of personal information,
+            inappropriate content, or any features that violate Scratch's terms
+            of service. All interactions are limited to the context of the
+            Scratch project being played, which is fully subject to moderation
+            by the Scratch Team.
+          </p>
+
+          <h2>Why is my MultiPlay session not connecting?</h2>
+          <p>
+            MultiPlay uses WebRTC in STUN mode, which may require additional
+            network configuration (e.g., firewall settings) to work properly. If
+            you're having trouble connecting, please check your network settings
+            or try using a different network. Many school or workplace networks
+            may block WebRTC traffic by default, so you may encounter issues on
+            those kinds of networks.
+          </p>
+
+          <h2>How do I communicate with other players?</h2>
+          <p>
+            Itchy does not provide built-in chat or voice communication features
+            for MultiPlay in order to comply with the Scratch community
+            guidelines. Itchy MultiPlay is designed to be primarily used by
+            friends who are in the same physical location.
+          </p>
+
+          <h2>How many players are supported?</h2>
+          <p>
+            In the current beta stage, MultiPlay currently supports 2 players in
+            a session. This limitation may be increased to 4 players in the
+            future, depending on performance and user feedback.
+          </p>
+
+          <h2>______ isn't working, fix it</h2>
+          <p>
+            MultiPlay is still in beta, and we are actively working on improving
+            the feature. Chances are, if you encounter a bug, we've already
+            encountered it and are working on it. Don't expect everything to
+            work perfectly or fixes to be immediate. If you'd like, you can
+            report bugs on our
+            <a
+              href="https://github.com/micahlt/itchy-native/issues"
+              target="_blank"
+              >Github issue tracker</a
+            >.
+          </p>
+        </article>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js"></script>
+  </body>
+</html>
