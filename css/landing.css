@@ -62,7 +62,7 @@ body {
 }
 
 .mockup {
-  max-height: 80vh;
+  max-height: 70vh;
   opacity: 0;
   animation-name: fadein;
   animation-duration: 1s;
@@ -72,8 +72,8 @@ body {
 
 .downloads {
   padding-top: 1.6em;
-  width: 67%;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   display: inline !important;
   opacity: 0;
   animation-name: fadein;
@@ -83,30 +83,14 @@ body {
 }
 
 .downloads a {
-  margin-right: 0.3em;
-  margin-left: 0;
-  color: white;
   text-decoration: none;
-  border: 1px solid white;
-  border-radius: 7px;
-  padding: 0.6em 1em;
-  text-transform: uppercase;
-  line-height: 3.75em;
-  transition: 0.2s;
-  position: relative;
-  white-space: nowrap;
 }
 
 .downloads a img {
-  height: 1em;
+  height: 4em;
   margin-right: 0.6em;
   transform: translateY(0.1em);
   transition: 0.2s;
-}
-
-.downloads a:hover {
-  background: white;
-  color: #3a3a3a;
 }
 
 .downloads a:hover img {
@@ -319,6 +303,7 @@ article {
   width: 100%;
   height: 35px;
   position: fixed;
+  text-align: center;
   top: 0;
   background: rgba(0, 0, 0, 0.55);
   z-index: 1;
@@ -328,7 +313,6 @@ article {
 #navbar nav {
   width: 100%;
   margin-top: 6px;
-  margin-left: 3vw;
 }
 
 #navbar a {
@@ -338,6 +322,10 @@ article {
   text-decoration: none;
   margin-right: 1.8em;
   cursor: pointer;
+}
+
+#navbar a:last-of-type {
+  margin-right: 0;
 }
 
 #navbar nav ul li:hover {
@@ -350,5 +338,9 @@ article {
   }
   .downloads {
     text-align: center;
+  }
+
+  .header-container {
+    grid-template-columns: 1fr;
   }
 }
